@@ -43,7 +43,11 @@ h6,
   overflow: hidden; /* Needed for blur */
   color: white;
   padding: 20px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+  box-sizing: border-box;
+  margin: 20px 10px 20px 10px;
+  width: calc(33.33333% - 60px);
+  border-radius: 5px;
 }
 .ppt-card .bg {
   position: absolute;
