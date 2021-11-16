@@ -16,7 +16,7 @@ h6,
 .read-next-story .post:before,
 .pagination,
 .site-footer {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif!important;
 }
 
 /* This is necessary to not mess up share icons at bottom of posts */
@@ -42,7 +42,7 @@ h6,
   position: relative;
   overflow: hidden; /* Needed for blur */
   color: white;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
   box-sizing: border-box;
   margin: 20px 10px 20px 10px;
@@ -50,17 +50,20 @@ h6,
   border-radius: 5px;
 }
 .ppt-card .bg {
-  position: absolute;
-  top: -5px;
-  bottom: -5px;
-  left: -5px;
-  right: -5px;
-  filter: blur(2px) brightness(0%);
-  -webkit-filter: blur(2px) brightness(70%);
+  filter: brightness(70%);
+  -webkit-filter: brightness(70%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   transition: opacity 0.25s ease-in-out;
+
+  /* règles de feature-article picture */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 .ppt-card .bg::after {
   content: "";
@@ -69,13 +72,24 @@ h6,
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: 0.7;
+  opacity: 0.2;
   background-color: #1155aa;
 }
+
+/* Added */
+.ppt-card .bg div {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
 .ppt-card .content {
   position: relative;
   z-index: 1000;
   transition: opacity 0.25s ease-in-out;
+  display: block;
 }
 .ppt-card:hover .bg {
   opacity: 0;
