@@ -292,6 +292,9 @@ textarea {
   --header-menu-gradient-first-color: rgba(17, 17, 17, 0);
   --header-menu-gradient-second-color: rgba(17, 17, 17, 0.65);
 }
+
+/* Ici la fonctionnalité couleur dark en fonction du naviguateur
+
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --background-color: #111;
@@ -319,6 +322,9 @@ textarea {
     --header-menu-gradient-second-color: rgba(17, 17, 17, 0.65);
   }
 }
+
+------------------------------------------------------------------- */
+ 
 .hide {
   display: none;
 }
