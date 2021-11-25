@@ -1,4 +1,15 @@
-# [Ghost 4.X](https://github.com/TryGhost/Ghost) on [Heroku](https://heroku.com)
+# Gaia Dev Ghost
+Dev Heroku instance for the news module of the Gaia project.  
+Includes a custom theme based on Liebling but modified to follow the Gaia graphic charter.
+
+These modifications include files compiled from [c4ffein](https://github.com/c4ffein)'s:
+- [smallbreeze.scss](https://github.com/c4ffein/1files-js/tree/master/smallbreeze/smallbreeze.scss)
+- [maz-comps.scss](https://github.com/c4ffein/1files-js/blob/master/maz-comps/maz-comps.scss)
+Which have been trimmed down to only include the css classes useful for this project.
+
+The `Ghost 4.X on Heroku` project, the Liebling theme and the files from c4ffein are all MIT licensed, and so are all files in this repository. 
+
+## [Ghost 4.X](https://github.com/TryGhost/Ghost) on [Heroku](https://heroku.com)
 Ghost is world's most popular modern publishing platform for creating a new media platform. It has been used by Apple, SkyNews, Buffer, OpenAI, and thousands more.
 You can visit the project's website at <a href="https://ghost.org/" target="_blank">https://ghost.org</a>, or read the docs on <a href="https://ghost.org/docs" target="_blank">https://ghost.org/docs</a>.
 
